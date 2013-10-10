@@ -3,7 +3,7 @@ Teste Front-End
   
   - Faça um fork deste repositório;
   - Crie uma página seguindo como base a imagem [tela.png](tela.png);
-  - Guarde seus arquivos dentro da pasta [dist](/dist)
+  - Guarde seus arquivos dentro da pasta [src](/src)
   - Faça um pull request.
   
 Ao terminar, me informe por email que nos enviou a sua solução para seguirmos em frente.
