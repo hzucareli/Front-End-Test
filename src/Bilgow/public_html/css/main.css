@@ -6,12 +6,6 @@ ul{
     list-style: none;
 }
 
-.img-responsive {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
 #app-container{
     max-width: 980px;
     margin: 0 auto;
@@ -41,13 +35,14 @@ ul{
 
 .post.tile p{
     font-size: 1em;
-    margin-top: 1em;
+    margin-top: -1em;
+    margin-bottom: -1em;
 }
 
 .post-header{
-    overflow: auto;
     position: relative;
     z-index: 2;
+    max-width: 250px;
 }
 
 .post-header > a{
@@ -59,15 +54,36 @@ ul{
 }
 
 .post-content{
-    margin: -14.3em 0 0 15.3em;
     text-align: left !important;
     float: right;
+    width: 100%;
+    background: #ECF0F1;
 }
 
 .post-content h1{
     font-size: 2em;
+    margin: 0;
+
+}
+
+.post-margin{
+    padding: 14px;
+}
+
+.post-external-link{
+    background: #e2e6e8;
+    border-top: 1px solid #BDC3C7;
+    padding-top: 1em;
+    overflow: auto;
+    text-align: center;
 }
 
 .post-external-link img{
-    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    max-height: 300px;
+}
+
+.post-comentary{
+    margin-top: 1em;
 }
