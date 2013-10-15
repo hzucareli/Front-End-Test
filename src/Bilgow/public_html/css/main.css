@@ -139,7 +139,7 @@ ul{
     margin: 0 auto;
     position: absolute;
     top: 1.5em;
-    left: 0;
+    width: 100%;
 }
 
 #social-hub .btn-toolbar .btn-group{
@@ -156,7 +156,13 @@ ul{
 
 .friend-zone li{
     padding: 8px;
-    float: left;
+    max-width: 100px;
+    display: inline-block;
+}
+
+.friend-zone a{
+    display: block;
+    overflow: hidden;
 }
 
 #last-updates{
