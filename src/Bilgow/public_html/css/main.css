@@ -19,7 +19,6 @@ ul{
 #app-container{
     max-width: 1004px;
     margin: 0 auto;
-    position: relative;
 }
 
 #bilgow-logo img{
@@ -135,11 +134,20 @@ ul{
 
 #social-hub .btn-toolbar{
     z-index: 1;
-    position: relative;
     margin: 0 auto;
     position: absolute;
-    top: 1.5em;
+    top: 0;
     width: 100%;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #34495E;
+}
+
+#social-hub .btn-group{
+    width: 100%;
+}
+
+#social-hub .btn{
+    width: 50%;
 }
 
 #social-hub .btn-toolbar .btn-group{
@@ -148,14 +156,14 @@ ul{
 
 .friend-zone{
     background: #2C3E50;
-    padding-top: 1.5em;
-    margin: 1.5em 0;
+    padding-top: 3em;
+    margin-bottom: 1.5em;
     width: 100%;
     text-align: center;
 }
 
 .friend-zone li{
-    padding: 8px;
+    padding: 7px;
     max-width: 100px;
     display: inline-block;
 }
@@ -174,4 +182,88 @@ ul{
     border-bottom: 1px solid #16A085;
     margin-bottom: 1em;
     color: #16A085;
+}
+
+/******************************************************************************\
+/*  Css for Mobile.
+/******************************************************************************/
+@media (max-width: 767px) {
+    /******************************************************************************\
+    /*  Css for statics objects.
+    /******************************************************************************/
+    #time-line{
+        position: relative;
+        z-index: 1;
+    }
+    /******************************************************************************\
+    /*  Css for object Post.
+    /******************************************************************************/
+    .post > .post-header{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .post-body {
+        padding-right: 14px;
+    }
+    .post-comentary .post-header{
+        padding-bottom: 0.5em;
+    }
+    .post-comentary h1{
+        position: absolute;
+        top: 0em;
+        left: 50px;
+    }
+
+    /******************************************************************************\
+    /*  Css for HUB social.
+    /******************************************************************************/
+
+    #social-hub{
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        position: fixed;
+        z-index: 2;
+        margin-left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    #social-hub.social-hide{
+        margin-left: -90%;
+    }
+
+    #btn-show-bar.btn{
+        font-family: 'Flat-UI-Icons';
+        position: absolute;
+        width: 10%;
+        right: -10%;
+        height: 100%;
+        border-left: 1px solid #34495E;
+    }
+
+    .friend-zone{
+        height: 50%;
+        background: rgba(44, 62, 80, 0.98);
+        margin-bottom: 0;
+    }
+
+    .friend-zone li{
+        max-width: 65px;
+    }
+
+    #last-updates{
+        height: 50%;
+    }
+
+    #last-updates h1{
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        padding: 0.2em;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+
 }
