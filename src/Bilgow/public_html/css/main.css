@@ -1,0 +1,269 @@
+/******************************************************************************\
+/* Reset for custom layout.
+/******************************************************************************/
+body{
+    background-color: #ECF0F1 !important;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+/******************************************************************************\
+/*  Css for statics objects.
+/******************************************************************************/
+
+#app-container{
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+#bilgow-logo img{
+    margin: 2em 0;
+}
+
+#time-line{
+    text-align: center;
+}
+
+#post-list{
+    text-align: left;
+}
+/******************************************************************************\
+/*  Css for object Post.
+/******************************************************************************/
+.post{
+    background-color: #33cccc;
+    text-align: left;
+    font-size: 1em;
+    overflow: auto;
+}
+
+.post p{
+    font-size: 1em;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+
+.post blockquote{
+    padding: 0;
+    margin: 0;
+}
+
+.post .left{
+    float: left;
+}
+
+.post > header.post-margin{
+    padding-right: 0;
+    margin-right: -14px;
+}
+
+.post-header{
+    position: relative;
+    z-index: 2;
+    max-width: 250px;
+}
+
+.post h1{
+    font-size: 2em;
+    margin: 0;
+
+}
+
+.post-header > a{
+    display: block;
+}
+
+.post-content{
+    text-align: left !important;
+    width: 100%;
+    background: #ECF0F1;
+}
+
+.post-margin{
+    padding: 14px;
+}
+
+.post-external-link{
+    background: #e2e6e8;
+    border-top: 1px solid #BDC3C7;
+    padding-top: 1em;
+    overflow: auto;
+    text-align: center;
+}
+
+.post-external-link img{
+    margin: 0 auto;
+    position: relative;
+    max-height: 300px;
+}
+
+.post-comentary{
+    margin-top: 1em;
+    background: #BDC3C7;
+    overflow: auto;
+}
+
+.post-comentary .container-fluid{
+    padding: 0;
+}
+
+.post-comentary .post-header{
+    max-width: 50px;
+}
+
+.post-comentary .post-margin{
+    padding: 10px;
+}
+
+.post-body{
+    padding-right: 0;
+}
+
+/******************************************************************************\
+/*  Css for HUB social.
+/******************************************************************************/
+
+#social-hub{
+    position: relative;
+}
+
+#social-hub .btn-toolbar{
+    z-index: 1;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #34495E;
+}
+
+#social-hub .btn-group{
+    width: 100%;
+}
+
+#social-hub .btn{
+    width: 50%;
+}
+
+#social-hub .btn-toolbar .btn-group{
+    padding: 0;
+}
+
+.friend-zone{
+    background: #2C3E50;
+    padding-top: 3em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.friend-zone li{
+    padding: 7px;
+    max-width: 100px;
+    display: inline-block;
+}
+
+.friend-zone a{
+    display: block;
+    overflow: hidden;
+}
+
+#last-updates{
+    background: #1ABC9C;
+    color: #ffffff;
+}
+
+#last-updates h1{
+    border-bottom: 1px solid #16A085;
+    margin-bottom: 1em;
+    color: #16A085;
+}
+
+/******************************************************************************\
+/*  Css for Mobile.
+/******************************************************************************/
+@media (max-width: 767px) {
+    /******************************************************************************\
+    /*  Css for statics objects.
+    /******************************************************************************/
+    #time-line{
+        position: relative;
+        z-index: 1;
+    }
+    /******************************************************************************\
+    /*  Css for object Post.
+    /******************************************************************************/
+    .post > .post-header{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .post-body {
+        padding-right: 14px;
+    }
+    .post-comentary .post-header{
+        padding-bottom: 0.5em;
+    }
+    .post-comentary h1{
+        position: absolute;
+        top: 0em;
+        left: 50px;
+    }
+
+    /******************************************************************************\
+    /*  Css for HUB social.
+    /******************************************************************************/
+
+    #social-hub{
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        position: fixed;
+        z-index: 2;
+        margin-left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    #social-hub.social-hide{
+        margin-left: -90%;
+    }
+
+    #btn-show-bar.btn{
+        font-family: 'Flat-UI-Icons';
+        position: absolute;
+        width: 10%;
+        right: -10%;
+        height: 100%;
+        border-left: 1px solid #34495E;
+    }
+
+    .friend-zone{
+        height: 50%;
+        background: rgba(44, 62, 80, 0.98);
+        margin-bottom: 0;
+    }
+
+    .friend-zone li{
+        max-width: 65px;
+    }
+
+    #last-updates{
+        height: 50%;
+    }
+
+    #last-updates h1{
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        padding: 0.2em;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        
+        <link rel="stylesheet" href="css/flat-ui.css" >
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body class="container-fluid">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        
+        <a href="http://landing.bilgow.com/" title="site: landing.bilgow.com" id="bilgow-logo">
+            <img src="img/bilgow.png" alt="Bilgow"/>
+        </a>
+        
+        <div class="row-fluid" id="app-container">
+            <section id="time-line" class="span9">
+                <!-- Post list. -->
+                <ul id="post-list">
+                    <li >
+                        <!-- Post -->
+                        <section class="post row-fluid img-rounded">
+                            <header class="post-header span4 post-margin">
+                                <a href="#">
+                                    <img src="img/users/200.jpg" alt="Name" class="img-rounded"/>
+                                </a>
+                            </header>
+                            <!-- Post content.-->
+                            <div class="span8 post-body post-margin">
+                                <blockquote class="post-content img-rounded">
+                                    <h1 class="post-margin"><a rel="author" href="#">Name</a> disse:</h1>
+                                    <p class="post-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at dignissim tellus, eu facilisis urna. Pellentesque consectetur viverra porta. Vestibulum vitae arcu dui. Quisque at accumsan orci. Vestibulum sodales magna nibh, sed molestie nulla facilisis nec. In laoreet dolor sit amet congue semper. Donec dictum facilisis scelerisque. Duis imperdiet facilisis eros, sed aliquet velit blandit fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie hendrerit odio, non mollis dui pellentesque vel. Fusce commodo sapien risus, vitae imperdiet mi aliquam convallis. Donec massa nunc, suscipit quis eleifend quis, eleifend a dui.</p>
+                                    <!-- External link in post. -->
+                                    <aside class="post-external-link post-margin img-rounded">
+                                        <img src="img/users/300.jpg" class="img-rounded"/>
+                                        <div>
+                                            <h1>Aside Title</h1>
+                                            <p>Aside information</p>
+                                        </div>
+                                    </aside>
+                                    <!-- == End External link in post. == -->
+                                </blockquote>
+                                <!-- == End Post content. == -->
+                                <!-- Post Comentary -->
+                                <section class="post-comentary img-rounded post-margin">
+                                    <!-- Comentary List -->
+                                    <ul>
+                                        <li>
+                                            <!-- Comentary -->                                                
+                                            <blockquote>
+                                                <header class="post-header span2">
+                                                    <a href="#">
+                                                        <img src="img/users/50.jpg" alt="Name" class="img-rounded"/>
+                                                    </a>
+                                                </header>
+                                                <div class="span10">
+                                                    <h1 class="post-margin"><a rel="author" href="#">Name</a> disse:</h1>
+                                                    <p class="post-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at dignissim tellus, eu facilisis urna. Pellentesque consectetur viverra porta. Vestibulum vitae arcu dui. Quisque at accumsan orci. Vestibulum sodales magna nibh, sed molestie nulla facilisis nec. In laoreet dolor sit amet congue semper. Donec dictum facilisis scelerisque. Duis imperdiet facilisis eros, sed aliquet velit blandit fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie hendrerit odio, non mollis dui pellentesque vel. Fusce commodo sapien risus, vitae imperdiet mi aliquam convallis. Donec massa nunc, suscipit quis eleifend quis, eleifend a dui.</p>
+                                                </div>
+                                            </blockquote>
+                                            <!-- == End Post content. == -->
+                                        </li>
+                                    </ul>
+                                    <!-- == End Comentary List == -->
+                                </section>
+                                <!-- == End Post Comentary == -->
+                            </div>
+                        </section>
+                        <!-- == End Post. == -->
+                    </li>
+                </ul>
+                <!-- == End Post List. == -->
+            </section>
+
+            <!-- Social hub. -->
+            <section id="social-hub" class="span3 social-hide">
+                <header class="btn-toolbar img-rounded">
+                    <menu type="toolbar" class="btn-group">
+                        <button id="btn-friends" class="btn btn-inverse active">Amigos</button>
+                        <button id="btn-following" class="btn btn-inverse">Seguindo</button>
+                        <button id="btn-show-bar" class="btn btn-inverse visible-phone"><i class="icon-chevron-right"></i></button>
+                    </menu>
+                </header>
+
+                <section id="friends-hub" class="img-rounded friend-zone">
+                    <ul>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="following-hub" class="img-rounded friend-zone" style="display: none">
+                    <ul>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="row-fluid">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="last-updates" class="img-rounded tile">
+                    <h1 class="tile-title post-margin">Recente:</h1>
+                    <h2 class="tile-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                    <p>Nunc at dignissim tellus, eu facilisis urna. Pellentesque consectetur viverra porta. Vestibulum vitae arcu dui...</p>
+                </section>
+            </section>
+            <!-- == End Socia hub. == -->
+        </div>
+        <script src="js/vendor/jquery-1.8.0.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/flat-ui/bootstrap-select.js"></script>
+        <script src="js/vendor/flat-ui/bootstrap-switch.js"></script>
+        <script src="js/vendor/flat-ui/jquery.tagsinput.js"></script>
+        <script src="js/vendor/flat-ui/jquery.placeholder.js"></script>
+        <script src="js/vendor/flat-ui/application.js"></script>
+        <script src="js/vendor/flat-ui/icon-font-ie7.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
