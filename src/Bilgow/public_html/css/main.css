@@ -1,3 +1,6 @@
+/******************************************************************************\
+/* Reset for custom layout.
+/******************************************************************************/
 body{
     background-color: #ECF0F1 !important;
     text-align: center;
@@ -9,6 +12,10 @@ ul{
     overflow: hidden;
 }
 
+/******************************************************************************\
+/*  Css for statics objects.
+/******************************************************************************/
+
 #app-container{
     max-width: 1004px;
     margin: 0 auto;
@@ -19,14 +26,16 @@ ul{
     margin: 2em 0;
 }
 
-#post-list{
-    text-align: left;
-}
-
 #time-line{
     text-align: center;
 }
 
+#post-list{
+    text-align: left;
+}
+/******************************************************************************\
+/*  Css for object Post.
+/******************************************************************************/
 .post{
     background-color: #33cccc;
     text-align: left;
@@ -40,16 +49,6 @@ ul{
     margin-bottom: -1em;
 }
 
-.post-header{
-    position: relative;
-    z-index: 2;
-    max-width: 250px;
-}
-
-.post-header > a{
-    display: block;
-}
-
 .post blockquote{
     padding: 0;
     margin: 0;
@@ -59,10 +58,15 @@ ul{
     float: left;
 }
 
-.post-content{
-    text-align: left !important;
-    width: 100%;
-    background: #ECF0F1;
+.post > header.post-margin{
+    padding-right: 0;
+    margin-right: -14px;
+}
+
+.post-header{
+    position: relative;
+    z-index: 2;
+    max-width: 250px;
 }
 
 .post h1{
@@ -71,9 +75,14 @@ ul{
 
 }
 
-.post > header.post-margin{
-    padding-right: 0;
-    margin-right: -14px;
+.post-header > a{
+    display: block;
+}
+
+.post-content{
+    text-align: left !important;
+    width: 100%;
+    background: #ECF0F1;
 }
 
 .post-margin{
@@ -104,10 +113,6 @@ ul{
     padding: 0;
 }
 
-.post-body{
-    padding-right: 0;
-}
-
 .post-comentary .post-header{
     max-width: 50px;
 }
@@ -115,6 +120,14 @@ ul{
 .post-comentary .post-margin{
     padding: 10px;
 }
+
+.post-body{
+    padding-right: 0;
+}
+
+/******************************************************************************\
+/*  Css for HUB social.
+/******************************************************************************/
 
 #social-hub{
     position: relative;
