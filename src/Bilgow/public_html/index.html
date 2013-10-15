@@ -22,22 +22,26 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
+        
+        <a href="http://landing.bilgow.com/" title="site: landing.bilgow.com" id="bilgow-logo">
+            <img src="img/bilgow.png" alt="Bilgow"/>
+        </a>
+        
         <div class="row-fluid" id="app-container">
-            <section id="time-line" class="span8">
-                <a href="http://landing.bilgow.com/" title="site: landing.bilgow.com" id="bilgow-logo"><img src="img/bilgow.png" alt="Bilgow"/></a>
+            <section id="time-line" class="span9">
                 <!-- Post list. -->
                 <ul id="post-list">
                     <li >
                         <!-- Post -->
-                        <blockquote class="post tile row-fluid">
-                            <header class="post-header span4">
-                                <a rel="author" href="#">
+                        <section class="post row-fluid img-rounded">
+                            <header class="post-header span4 post-margin">
+                                <a href="#">
                                     <img src="img/users/200.jpg" alt="Name" class="img-rounded"/>
                                 </a>
                             </header>
                             <!-- Post content.-->
-                            <div class="span8">
-                                <section class="clearfix post-content img-rounded ">
+                            <div class="span8 post-body post-margin">
+                                <blockquote class="post-content img-rounded">
                                     <h1 class="post-margin"><a rel="author" href="#">Name</a> disse:</h1>
                                     <p class="post-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at dignissim tellus, eu facilisis urna. Pellentesque consectetur viverra porta. Vestibulum vitae arcu dui. Quisque at accumsan orci. Vestibulum sodales magna nibh, sed molestie nulla facilisis nec. In laoreet dolor sit amet congue semper. Donec dictum facilisis scelerisque. Duis imperdiet facilisis eros, sed aliquet velit blandit fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie hendrerit odio, non mollis dui pellentesque vel. Fusce commodo sapien risus, vitae imperdiet mi aliquam convallis. Donec massa nunc, suscipit quis eleifend quis, eleifend a dui.</p>
                                     <!-- External link in post. -->
@@ -49,71 +53,116 @@
                                         </div>
                                     </aside>
                                     <!-- == End External link in post. == -->
-                                </section>
+                                </blockquote>
                                 <!-- == End Post content. == -->
                                 <!-- Post Comentary -->
-                                <section class="clearfix post-content post-comentary img-rounded ">
+                                <section class="post-comentary img-rounded post-margin">
                                     <!-- Comentary List -->
                                     <ul>
                                         <li>
-                                            <!-- Comentary -->
-                                            <blockquote class="post-margin">
-                                                <header>
-                                                    <a rel="author" href="#" class="left">
+                                            <!-- Comentary -->                                                
+                                            <blockquote>
+                                                <header class="post-header span2">
+                                                    <a href="#">
                                                         <img src="img/users/50.jpg" alt="Name" class="img-rounded"/>
                                                     </a>
-                                                    <h1 class="left"><a rel="author" href="#">Name</a> disse:</h1>
                                                 </header>
-                                                <p>Pots paragraph</p>
+                                                <div class="span10">
+                                                    <h1 class="post-margin"><a rel="author" href="#">Name</a> disse:</h1>
+                                                    <p class="post-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at dignissim tellus, eu facilisis urna. Pellentesque consectetur viverra porta. Vestibulum vitae arcu dui. Quisque at accumsan orci. Vestibulum sodales magna nibh, sed molestie nulla facilisis nec. In laoreet dolor sit amet congue semper. Donec dictum facilisis scelerisque. Duis imperdiet facilisis eros, sed aliquet velit blandit fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie hendrerit odio, non mollis dui pellentesque vel. Fusce commodo sapien risus, vitae imperdiet mi aliquam convallis. Donec massa nunc, suscipit quis eleifend quis, eleifend a dui.</p>
+                                                </div>
                                             </blockquote>
-                                            <!-- == End Comentary  == -->
+                                            <!-- == End Post content. == -->
                                         </li>
                                     </ul>
                                     <!-- == End Comentary List == -->
                                 </section>
                                 <!-- == End Post Comentary == -->
                             </div>
-                        </blockquote>
+                        </section>
                         <!-- == End Post. == -->
                     </li>
                 </ul>
                 <!-- == End Post List. == -->
             </section>
 
-            <!-- Socia hub. -->
-            <section id="social-hub" class="span4">
-                <header class="btn-toolbar">
+            <!-- Social hub. -->
+            <section id="social-hub" class="span3">
+                <header class="btn-toolbar img-rounded">
                     <menu type="toolbar" class="btn-group">
-                        <button class="btn btn-info">Amigos</button>
-                        <button class="btn btn-info">Seguindo</button>
+                        <button class="btn btn-inverse active">Amigos</button>
+                        <button class="btn btn-inverse">Seguindo</button>
                     </menu>
                 </header>
 
-                <section id="friends-hub">
+                <section id="friends-hub" class="img-rounded friend-zone">
                     <ul>
-                        <li>
-                            <figure>
-                                <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
-                                <figcaption><a href="" title="Friend Name" >Friend Name</a></figcaption>
-                            </figure>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
                         </li>
                     </ul>
                 </section>
 
-                <section id="following-hub">
+                <section id="following-hub" class="img-rounded friend-zone" style="display: none">
                     <ul>
-                        <li>
-                            <figure>
-                                <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
-                                <figcaption><a href="" title="Friend Name" >Friend Name</a></figcaption>
-                            </figure>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="" title="Friend Name"><img src="img/users/100.jpg" alt="Friend Name" class="img-rounded"></a>
                         </li>
                     </ul>
                 </section>
 
-                <section id="last-updates">
-                    <h1>kjashjkh</h1>
-                    <p>kajhdskjshdkjahsdkjakjshd</p>
+                <section id="last-updates" class="img-rounded tile">
+                    <h1 class="tile-title post-margin">Recente:</h1>
+                    <h2 class="tile-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                    <p>Nunc at dignissim tellus, eu facilisis urna. Pellentesque consectetur viverra porta. Vestibulum vitae arcu dui. Quisque at accumsan orci. Vestibulum sodales magna nibh, sed molestie nulla facilisis nec. In laoreet dolor sit amet congue semper.</p>
                 </section>
             </section>
             <!-- == End Socia hub. == -->

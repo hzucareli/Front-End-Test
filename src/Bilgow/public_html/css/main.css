@@ -1,21 +1,22 @@
 body{
     background-color: #ECF0F1 !important;
+    text-align: center;
 }
 
 ul{
     list-style: none;
+    margin: 0 !important;
+    overflow: hidden;
 }
 
 #app-container{
-    max-width: 980px;
+    max-width: 1004px;
     margin: 0 auto;
     position: relative;
 }
 
-#bilgow-logo{
-    display: inline-block;
-    margin: 2em auto;
-    position: relative;
+#bilgow-logo img{
+    margin: 2em 0;
 }
 
 #post-list{
@@ -26,14 +27,14 @@ ul{
     text-align: center;
 }
 
-.post.tile{
+.post{
     background-color: #33cccc;
     text-align: left;
     font-size: 1em;
     overflow: auto;
 }
 
-.post.tile p{
+.post p{
     font-size: 1em;
     margin-top: -1em;
     margin-bottom: -1em;
@@ -49,21 +50,30 @@ ul{
     display: block;
 }
 
+.post blockquote{
+    padding: 0;
+    margin: 0;
+}
+
 .post .left{
     float: left;
 }
 
 .post-content{
     text-align: left !important;
-    float: right;
     width: 100%;
     background: #ECF0F1;
 }
 
-.post-content h1{
+.post h1{
     font-size: 2em;
     margin: 0;
 
+}
+
+.post > header.post-margin{
+    padding-right: 0;
+    margin-right: -14px;
 }
 
 .post-margin{
@@ -86,4 +96,63 @@ ul{
 
 .post-comentary{
     margin-top: 1em;
+    background: #BDC3C7;
+    overflow: auto;
+}
+
+.post-comentary .container-fluid{
+    padding: 0;
+}
+
+.post-body{
+    padding-right: 0;
+}
+
+.post-comentary .post-header{
+    max-width: 50px;
+}
+
+.post-comentary .post-margin{
+    padding: 10px;
+}
+
+#social-hub{
+    position: relative;
+}
+
+#social-hub .btn-toolbar{
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+}
+
+#social-hub .btn-toolbar .btn-group{
+    padding: 0;
+}
+
+.friend-zone{
+    background: #2C3E50;
+    padding-top: 1.5em;
+    margin: 1.5em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.friend-zone li{
+    padding: 8px;
+    float: left;
+}
+
+#last-updates{
+    background: #1ABC9C;
+    color: #ffffff;
+}
+
+#last-updates h1{
+    border-bottom: 1px solid #16A085;
+    margin-bottom: 1em;
+    color: #16A085;
 }

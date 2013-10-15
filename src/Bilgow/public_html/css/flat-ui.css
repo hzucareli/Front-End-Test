@@ -401,7 +401,7 @@ blockquote {
   padding: 0 0 0 19px;
 }
 blockquote:before {
-  position: absolute;
+  /*position: absolute;
   left: 0;
   width: 3px;
   height: 100%;
@@ -409,7 +409,7 @@ blockquote:before {
   bottom: 0;
   background-color: #ebedee;
   content: "";
-  border-radius: 2px;
+  border-radius: 2px;*/
 }
 blockquote p {
   font-size: 21px;
