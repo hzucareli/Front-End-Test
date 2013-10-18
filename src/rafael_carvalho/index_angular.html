@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="feed">
+  <head>
+    <title>Teste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>  
+
+  </head>
+  <body ng-controller="FeedList">
+
+    <main class="container">
+      <h1>Tema</h1>
+      
+      <section id="posts" class="pull-left col-md-7">
+        <div class="post  pull-left" ng-repeat="post in posts">
+          <img class="img-responsive pull-left hidden-print" ng-src="{{post.avatar}}" width="65" alt="..." />
+          <p class="author">
+            <b class="text-primary">{{post.author}}</b> <b>disse:</b>
+          </p>
+          <p>{{post.text}}</p> 
+          
+          <div class="content col-md-offset-2">
+            <img class="img-responsive pull-left hidden-print" ng-src="{{post.imagePost}}" width="130" alt="..." />
+            <h2 class="title"><a href="{{post.link}}" class="text-primary">{{post.linkTitle}}</a></h2>
+            <p>{{post.textPost}}</p>
+          </div>  
+          
+          <ul class="comments list-unstyled col-md-offset-2 pull-left">
+            <li ng-repeat="post in posts">     
+              <img class="img-responsive pull-left hidden-print" ng-src="{{post.userAvatarComment}}" width="48" alt="..." />
+              <p>
+                <span class="text-primary">{{post.userNameComment}}</span> disse:  
+                <span>{{post.userTextComment}}</span>
+              </p>
+            </li>  
+          </ul> 
+        </div> 
+        
+      </section>
+      
+      <section id="network" class="pull-left col-md-3">
+        <ul class="nav nav-tabs">
+          <li><a href="#">Amigos</a></li>
+          <li  class="active"><a href="#">Seguindo</a></li>
+        </ul>
+  
+        <div id="friends" class="hide">
+          <h3>Amigos</h3>
+          
+          <ul class="list-unstyled">
+            <li ng-repeat="friend in friends">
+              <a href="{{friend.link}}">
+                <img class="img-responsive pull-left hidden-print" ng-src="{{friend.avatar}}" width="65" alt="..." />
+                <span class="hide">{{friend.name}}</span>
+              </a>
+            </li>
+          </ul>  
+        </div>
+       
+        <div id="following" class="container">
+          <h3>Fotos</h3>
+          
+          <ul class="list-unstyled">
+            <li ng-repeat="follow in followers">
+              <a href="{{friend.link}}">
+                <img class="img-responsive pull-left hidden-print" ng-src="{{friend.avatar}}" width="65" alt="..." />
+                <span class="hide">{{friend.name}}</span>
+              </a>
+            </li>
+          </ul>  
+        </div>  
+        
+        <div id="news" class="container">
+          <h3>Recente</h3>
+          <p><span class="text-primary">{{news.highlight}}</span>{{news.text}}</p>
+        </div>  
+      </section>  
+    </main>
+    
+    <script src="js/controller.js"></script>
+  </body>
+</html>
