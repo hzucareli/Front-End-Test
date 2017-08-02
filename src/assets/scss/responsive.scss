@@ -1,0 +1,14 @@
+body {
+  @media #{$breakpoint-default} {
+    background: red;
+  }
+  @media #{$breakpoint-medium} {
+    background: blue;
+  }
+  @media #{$breakpoint-small} {
+    background: yellow;
+  }
+  @media #{$breakpoint-mobile} {
+    background: orange;
+  }
+}

@@ -1,0 +1,33 @@
+main {
+ article.posts {
+  border-bottom: 1px solid $border-color;
+  padding: 20px 0;
+  &:last-child {
+   border-bottom: none;
+   padding: 0;
+ }
+
+ .icon-user {
+  img {
+    width: 100px;
+  }
+}
+
+.media-body {
+  padding: 0 30px;
+  .contents {
+    img {
+      width: 150px;
+    }
+  }
+
+  .coments {
+
+  }
+}
+
+section.coments {
+  margin: 10px 0 0 0;
+}
+}
+}

@@ -8,4 +8,4 @@ Teste Front-End
  -> gulp
 
  Build Sass
--> npm test
+-> npm run watch-css
