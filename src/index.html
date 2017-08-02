@@ -3,90 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teste Fron-End Dr. Consulta</title>
+  <title>Teste Front-End Dr. Consulta</title>
+
+  <link rel="icon" href="assets/imagens/favicon.png" type="image/x-icon" />
+  <meta name="description" content="Layout final do teste Front End Dr. Consulta">
+
+  <meta name="language" content="pt-br" />
+  <meta name="keywords" content="Teste Profissional, Dr. Consulta, Front End, TI" />
+  <link rel="canonical" href="http://localhost.com.br" />
+  <meta name="robots" content="index,follow" />
 
   <!-- styles -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="libs/materialize/css/materialize.min.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- build:inlinecss -->
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+  <!-- endbuild -->
+
 </head>
 <body>
 
- <div class="container">
+  <div class="container">
+    <header>
+      <h1>Tema</h1>
+    </header>
 
-  <h1>Tema</h1>
-  <div class="row yellow">
-    <div class="col s6">
+    <main class="col-md-8">
 
-      <div class="section">
-        <div class="row">
-         <div class="col s2"><img src="assets/imagens/example-200x200.jpg" alt="Icone do autor"></div>
-           <div class="col s10">
-         <p>Henrique disse:</p>
-
-         <!-- post -->
-         <p>Lorem ipsum dolor sit amet, consectetur</p>
-         <img src="assets/imagens/example-300x300.jpg" alt="Imagem do post">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo elit, consequat nec neque eget, sagittis dapibus odio. Aliquam sapien nunc, congue non tincidunt nec, blandit in sapien. Integer porttitor justo eget lectus molestie, vitae accumsan nibh cursus. Cras vitae tempus orci, vel eleifend eros. Aliquam ac mattis nulla, nec efficitur mauris. In euismod vitae turpis faucibus lobortis. Morbi mauris risus, laoreet eget mauris ac, tincidunt pellentesque mauris. Praesent sed justo ac massa molestie luctus non ac odio.</p>
-
-         <!-- comentários -->
-         <div class="row">
-           <div class="col s2"><img src="assets/imagens/example-50x50.jpg" alt="Icone do autor"></div>
-           <div class="col s10">
-            <p>Pessoa disse:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo elit, consequat nec neque eget, sagittis dapibus</p>
-          </div>
+      <!-- Postagens -->
+      <article class="media">
+        <div class="media-left">
+          <a href="#"><img class="media-object" src="assets/imagens/example-200x200.jpg"  alt="..."/></a>
         </div>
+        <div class="media-body">
+          <header>
+            <h4 class="media-heading"><a href="#">Henrique</a> disse:</h4>
+            <p>Vestibulum sed justo sit amet metus ullamcorper porttitor.</p>
+          </header>
+
+          <aside class="media">
+            <div class="media-left"><a href="#"><img src="assets/imagens/example-300x300.jpg" alt="Imagem Ilustrativa"> </a></div>
+            <div class="media-body">
+              <p><a href="#">Link Title</a></p>
+              <p>In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor.</p>
+            </div>
+          </aside>
+
+          <!-- Comentários -->
+          <section class="coments">
+            <aside class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="assets/imagens/example-50x50.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <p><a href="#">Pessoa</a> disse "In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor."</p>
+              </div>
+            </aside>
+
+            <aside class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="assets/imagens/example-50x50.jpg" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <p><a href="#">Pessoa</a> disse "In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor."</p>
+              </div>
+            </aside>
+          </section>
+        </div>
+      </article>
+
+    </main>
+
+
+    <div class="col-md-4">
+      <header>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">Amigos</a></li>
+          <li role="presentation" class="active"><a href="#seguindo" aria-controls="seguindo" role="tab" data-toggle="tab">Seguindo</a></li>
+        </ul>
+      </header>
+       <div role="tabpanel" class="row tab-pane fade in active" id="seguindo">
+      <aside>
+        <h3>Fotos</h3>
+        <ul>
+          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
+          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
+          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
+          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
+          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
+        </ul>
+      </aside>
+
+      <aside>
+        <h3>Recentes</h3>
+        <p><a href="">Praesent eu eros vel risus convallis pulvinar.</a> Vestibulum vulputate, arcu sed molestie aliquam, orci tortor placerat mi, eget tristique augue lorem sed elit.</p>
+      </aside>
       </div>
-
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="section">
-    <h5>Section 2</h5>
-    <p>Stuff</p>
-  </div>
-
-</div>
-
-<div class="col s6">
-  <ul id="tabs-swipe-demo" class="tabs">
-    <li class="tab col s3"><a href="#box1">Amigos</a></li>
-    <li class="tab col s3"><a class="active" href="#box2">Seguindo</a></li>
-  </ul>
-
-  <div id="box1" class="col s12 blue">Test 1</div>
-
-
-  <div id="box2" class="col s12 red">
-    <div class="row">
-      <h3>Fotos</h3>
-
-      <ul>
-        <li>img</li>
-        <li>img</li>
-        <li>img</li>
-        <li>img</li>
-        <li>img</li>
-      </ul>
-
-    </div>
-
-    <div class="row">
-      <h3>Recente</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo elit, consequat nec neque eget, sagittis dapibus odio. Aliquam sapien nunc, congue non tincidunt nec, blandit in sapien. Integer porttitor justo eget lectus molestie, vitae accumsan nibh cursus.</p>
     </div>
 
   </div>
-</div>
-</div>
-
 </div>
 
 <!-- scripts -->
+<!-- build:inlinejs -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap-v3.3.7/javascripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
