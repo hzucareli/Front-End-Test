@@ -1,24 +1,12 @@
-@import '../../libs/bootstrap-v3.3.7/stylesheets/bootstrap';
+body{
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0;
 
 .container {
-  width: 95%;
-  main {
-    article {
-      border-bottom: 1px solid black;
-      padding: 20px 0;
-      &:last-child {
-       border-bottom: none;
-      padding: 0;
-      }
-
-      .media-body{
-        section.coments {
-          margin: 10px 0 0 0;
-          aside {
-
-          }
-        }
-      }
-    }
-  }
+  width: 80%;
 }
+}
+
+@import 'main';
+@import 'menu';

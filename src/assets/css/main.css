@@ -1,0 +1,10 @@
+main article.posts {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 20px 0; }
+  main article.posts:last-child {
+    border-bottom: none;
+    padding: 0; }
+  main article.posts .media-body {
+    padding: 0 30px; }
+  main article.posts section.coments {
+    margin: 10px 0 0 0; }

@@ -36,7 +36,7 @@ gulp.task('minify-html', function() {
 
 /* Concatenação */
 gulp.task('usemin', function() {
-    return gulp.src('./dist/index.html'])
+    return gulp.src('./dist/index.html')
     .pipe($.usemin({
        /*html: [
         // $.htmlmin({ collapseWhitespace: true }),
@@ -45,7 +45,7 @@ gulp.task('usemin', function() {
         inlinecss: [ $.cssnano({safe: true}) ],
         inlinejs: [ $.uglify() ]
     }))
-    .pipe(gulp.dest('./dist/assets/'));
+    .pipe(gulp.dest('./dist/'));
 });
 
 /* Imagens */
@@ -75,7 +75,7 @@ gulp.task('rev', function(){
 gulp.task('revall', ['rev'], function(){
     return gulp.src(['dist/**/*.{css,js,jpg,jpeg,png,svg}'])
     .pipe($.revAll.revision({
-        includeFilesInManifest: ['.html', '.js', '.css'],
+        includeFilesInManifest: ['.html', '.js', '.css',],
       dontRenameFile: ['.*/.*\.html']
   }))
     .pipe($.revdel())
@@ -84,6 +84,6 @@ gulp.task('revall', ['rev'], function(){
 
 
 /* Alias */
-gulp.task('minify', ['minify-js', 'minify-css']);
-gulp.task('build', $.sequence(['minify-js', 'minify-css', 'imagemin', 'usemin'])); // 'usemin', 'revall'
-gulp.task('default', $.sequence('copy', 'build'));
+gulp.task('minify', ['minify-js', 'minify-css', 'minify-html']);
+gulp.task('build', $.sequence(['imagemin', 'usemin'])); // , 'revall'
+gulp.task('default', $.sequence('copy', 'minify', 'build'));

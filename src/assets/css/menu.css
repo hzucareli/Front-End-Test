@@ -1,0 +1,7 @@
+nav header .nav-tabs > li.active > a {
+  border-radius: 0;
+  border-top: 3px solid #2CA6CB;
+  font-weight: 700; }
+
+nav aside .col-md-3 {
+  margin: 10px 0; }

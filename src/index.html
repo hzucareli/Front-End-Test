@@ -14,6 +14,7 @@
   <meta name="robots" content="index,follow" />
 
   <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap-v3.3.7/stylesheets/bootstrap.min.css">
   <!-- build:inlinecss -->
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
   <!-- endbuild -->
@@ -29,31 +30,29 @@
     <main class="col-md-8">
 
       <!-- Postagens -->
-      <article class="media">
+      <article class="posts media">
         <div class="media-left">
-          <a href="#"><img class="media-object" src="assets/imagens/example-200x200.jpg"  alt="..."/></a>
+          <a href="#"><img class="media-object" src="assets/imagens/example-200x200.jpg"  alt="User 1"/></a>
         </div>
         <div class="media-body">
-          <header>
-            <h4 class="media-heading"><a href="#">Henrique</a> disse:</h4>
-            <p>Vestibulum sed justo sit amet metus ullamcorper porttitor.</p>
-          </header>
+          <div class="contents">
+            <header>
+              <h4 class="media-heading"><a href="#">Henrique</a> disse:</h4>
+              <p>Vestibulum sed justo ullamcorper porttitor.</p>
+            </header>
 
-          <aside class="media">
-            <div class="media-left"><a href="#"><img src="assets/imagens/example-300x300.jpg" alt="Imagem Ilustrativa"> </a></div>
+            <div class="media-left"><a href="#"><img src="assets/imagens/example-300x300.jpg" alt="Banner 1"></a></div>
             <div class="media-body">
               <p><a href="#">Link Title</a></p>
               <p>In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor.</p>
             </div>
-          </aside>
+          </div>
 
           <!-- Comentários -->
           <section class="coments">
             <aside class="media">
               <div class="media-left">
-                <a href="#">
-                  <img class="media-object" src="assets/imagens/example-50x50.jpg" alt="...">
-                </a>
+                <a href="#"><img class="media-object" src="assets/imagens/example-50x50.jpg" alt="User coments 1"></a>
               </div>
               <div class="media-body">
                 <p><a href="#">Pessoa</a> disse "In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor."</p>
@@ -62,12 +61,45 @@
 
             <aside class="media">
               <div class="media-left">
-                <a href="#">
-                  <img class="media-object" src="assets/imagens/example-50x50.jpg" alt="...">
-                </a>
+                <a href="#"><img class="media-object" src="assets/imagens/example-50x50.jpg" alt="User coments 2"></a>
               </div>
               <div class="media-body">
-                <p><a href="#">Pessoa</a> disse "In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor."</p>
+                <p><a href="#">Pessoa</a> disse "In ultricies lobortis arcu in cursus."</p>
+              </div>
+            </aside>
+          </section>
+        </div>
+      </article>
+
+
+      <!-- Postagens -->
+      <article class="posts media">
+        <div class="media-left">
+          <a href="#"><img class="media-object" src="assets/imagens/example-200x200.jpg"  alt="User 1"/></a>
+        </div>
+        <div class="media-body">
+          <div class="contents">
+            <header>
+              <h4 class="media-heading"><a href="#">Pessoa</a> disse:</h4>
+              <p>Vestibulum sed justo sit amet metus ullamcorper porttitor.</p>
+            </header>
+
+            <aside class="media">
+              <div class="media-body">
+                <p>In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor.</p>
+                <p>In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc.</p>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Comentários -->
+          <section class="coments">
+            <aside class="media">
+              <div class="media-left">
+                <a href="#"><img class="media-object" src="assets/imagens/example-50x50.jpg" alt="User coments 1"></a>
+              </div>
+              <div class="media-body">
+                <p><a href="#">Henrique</a> disse "In ultricies lobortis arcu in cursus. Quisque est odio, sagittis ut vehicula et, volutpat at nunc. Vestibulum sed justo sit amet metus ullamcorper porttitor."</p>
               </div>
             </aside>
           </section>
@@ -76,40 +108,41 @@
 
     </main>
 
-
-    <div class="col-md-4">
+    <nav class="col-md-4">
       <header>
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">Amigos</a></li>
+        <ul class="nav nav-tabs" role="tablist" id="navegacao">
+          <li role="presentation" class="disabled"><a href="#" aria-controls="" role="tab" data-toggle="tab">Amigos</a></li>
           <li role="presentation" class="active"><a href="#seguindo" aria-controls="seguindo" role="tab" data-toggle="tab">Seguindo</a></li>
         </ul>
       </header>
-       <div role="tabpanel" class="row tab-pane fade in active" id="seguindo">
-      <aside>
-        <h3>Fotos</h3>
-        <ul>
-          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
-          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
-          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
-          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
-          <li><a href="#" title="Imagem exemplo"><img src="assets/imagens/example-100x100.jpg" alt="Imagem ilustrativa"></a></li>
-        </ul>
-      </aside>
+      <div role="tabpanel" class="row tab-pane fade in active" id="seguindo">
+        <aside>
+          <h3>Fotos</h3>
+          <div class="row">
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 1"></div>
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 2"></div>
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 3"></div>
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 4"></div>
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 5"></div>
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 6"></div>
+            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 7"></div>
+          </div>
+        </aside>
 
-      <aside>
-        <h3>Recentes</h3>
-        <p><a href="">Praesent eu eros vel risus convallis pulvinar.</a> Vestibulum vulputate, arcu sed molestie aliquam, orci tortor placerat mi, eget tristique augue lorem sed elit.</p>
-      </aside>
+        <aside>
+          <h3>Recente</h3>
+          <p><a href="#">Praesent eu eros vel risus convallis pulvinar.</a> Vestibulum vulputate, arcu sed molestie aliquam, orci tortor placerat mi, eget tristique augue lorem sed elit.</p>
+        </aside>
       </div>
-    </div>
+    </nav>
 
   </div>
 </div>
 
 <!-- scripts -->
-<!-- build:inlinejs -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="libs/bootstrap-v3.3.7/javascripts/bootstrap.min.js"></script>
+<!-- build:inlinejs -->
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <!-- endbuild -->
 
