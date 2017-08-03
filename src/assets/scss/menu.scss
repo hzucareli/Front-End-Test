@@ -1,4 +1,8 @@
 nav.bar-side {
+  .mobile {
+    display: none;
+  }
+
   header.menu {
     .nav-tabs > li.active > a {
       border-radius: 0;
@@ -7,18 +11,9 @@ nav.bar-side {
     }
   }
 
-  .mobile {
-    display: none;
-  }
-
   aside.gallery {
     .thumbs {
       margin: 10px 0;
     }
   }
-}
-
-
-.teste {
-  background: black;
 }
