@@ -1,0 +1,19 @@
+nav.bar-side {
+  .mobile {
+    display: none;
+  }
+
+  header.menu {
+    .nav-tabs > li.active > a {
+      border-radius: 0;
+      border-top: 3px solid #2CA6CB;
+      font-weight: 700;
+    }
+  }
+
+  aside.gallery {
+    .thumbs {
+      margin: 10px 0;
+    }
+  }
+}

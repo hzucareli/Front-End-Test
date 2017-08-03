@@ -1,0 +1,25 @@
+// assets
+@import 'variables';
+
+body{
+  border-bottom: 1px solid $border-color;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  .container {
+    width: 80%;
+  }
+
+  @media #{$breakpoint-default} {
+    font-size: 16px;
+  }
+  @media #{$breakpoint-medium} {
+    font-size: 18px;
+  }
+}
+
+//imports
+@import 'post';
+@import 'menu';
+
+@import 'responsive';
