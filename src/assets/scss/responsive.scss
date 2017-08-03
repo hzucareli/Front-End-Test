@@ -1,10 +1,45 @@
 body {
   @media #{$breakpoint-default} {
     background: red;
+    .container {
+      width: 90%;
+
+      // post
+      main {
+       article.posts {
+        .message {
+          padding: 0 10px;
+        }
+      }
+    }
+
+      // menu
+      nav.bar-side {
+        aside.gallery {
+          .thumbs {
+            margin: 2px 0;
+          }
+        }
+      }
+    }
   }
   @media #{$breakpoint-medium} {
     background: blue;
+    .container {
+      width: 100%;
+
+      // menu
+      nav.bar-side {
+        .menu {
+          display: none;
+        }
+        .mobile {
+          display: block;
+        }
+      }
+    }
   }
+
   @media #{$breakpoint-small} {
     background: yellow;
   }

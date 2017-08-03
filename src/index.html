@@ -27,14 +27,14 @@
       <h1>Tema</h1>
     </header>
 
-    <main class="col-md-8">
+    <main class="col-lg-8 col-md-9">
 
       <!-- Postagens -->
       <article class="posts media">
         <div class="icon-user icon-user media-left">
           <a href="#"><img class="media-object" src="assets/imagens/example-200x200.jpg"  alt="User 1"/></a>
         </div>
-        <div class="media-body">
+        <div class="message media-body">
           <div class="contents">
             <header>
               <h4 class="media-heading"><a href="#">Henrique</a> disse:</h4>
@@ -108,24 +108,31 @@
 
     </main>
 
-    <nav class="col-md-4">
-      <header>
+    <!-- bar side -->
+    <nav class="bar-side col-lg-4 col-md-3">
+      <header class="menu">
         <ul class="nav nav-tabs" role="tablist" id="navegacao">
           <li role="presentation" class="disabled"><a href="#" aria-controls="" role="tab" data-toggle="tab">Amigos</a></li>
           <li role="presentation" class="active"><a href="#seguindo" aria-controls="seguindo" role="tab" data-toggle="tab">Seguindo</a></li>
         </ul>
       </header>
+
+        <!-- mobile -->
+        <button type="button" class="mobile btn btn-info" aria-label="Left Align">
+          <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+        </button>
+
       <div role="tabpanel" class="row tab-pane fade in active" id="seguindo">
-        <aside>
+        <aside class="gallery">
           <h3>Fotos</h3>
           <div class="row">
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 1"></div>
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 2"></div>
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 3"></div>
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 4"></div>
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 5"></div>
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 6"></div>
-            <div class="col-md-3"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 7"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 1"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 2"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 3"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 4"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 5"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 6"></div>
+            <div class="thumbs col-lg-3 col-md-6"><img src="assets/imagens/example-100x100.jpg" class="img-responsive" alt="Gallery 7"></div>
           </div>
         </aside>
 

@@ -13,28 +13,46 @@ main article.posts {
     padding: 0; }
   main article.posts .icon-user img {
     width: 100px; }
-  main article.posts .media-body {
+  main article.posts .message {
     padding: 0 30px; }
-    main article.posts .media-body .contents img {
+    main article.posts .message .contents img {
       width: 150px; }
   main article.posts section.coments {
     margin: 10px 0 0 0; }
 
-nav header .nav-tabs > li.active > a {
+nav.bar-side header.menu .nav-tabs > li.active > a {
   border-radius: 0;
   border-top: 3px solid #2CA6CB;
   font-weight: 700; }
 
-nav aside .col-md-3 {
+nav.bar-side .mobile {
+  display: none; }
+
+nav.bar-side aside.gallery .thumbs {
   margin: 10px 0; }
+
+.teste {
+  background: black; }
 
 @media only screen and (max-width: 1300px) {
   body {
-    background: red; } }
+    background: red; }
+    body .container {
+      width: 90%; }
+      body .container main article.posts .message {
+        padding: 0 10px; }
+      body .container nav.bar-side aside.gallery .thumbs {
+        margin: 2px 0; } }
 
 @media only screen and (max-width: 970px) {
   body {
-    background: blue; } }
+    background: blue; }
+    body .container {
+      width: 100%; }
+      body .container nav.bar-side .menu {
+        display: none; }
+      body .container nav.bar-side .mobile {
+        display: block; } }
 
 @media only screen and (max-width: 750px) {
   body {
