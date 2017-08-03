@@ -42,8 +42,30 @@ body {
 
   @media #{$breakpoint-small} {
     background: yellow;
+
+       // post
+       main {
+         article.posts {
+          .icon-user {
+            display: table;
+            margin: 0 auto;
+          }
+
+          .message {
+            .contents{
+              .imagem {
+                display: inherit;
+              }
+              img {
+                width: 100%;
+                height: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media #{$breakpoint-mobile} {
+      background: orange;
+    }
   }
-  @media #{$breakpoint-mobile} {
-    background: orange;
-  }
-}

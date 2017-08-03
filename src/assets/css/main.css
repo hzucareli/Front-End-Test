@@ -56,7 +56,15 @@ nav.bar-side aside.gallery .thumbs {
 
 @media only screen and (max-width: 750px) {
   body {
-    background: yellow; } }
+    background: yellow; }
+    body main article.posts .icon-user {
+      display: table;
+      margin: 0 auto; }
+    body main article.posts .message .contents .imagem {
+      display: inherit; }
+    body main article.posts .message .contents img {
+      width: 100%;
+      height: 200px; } }
 
 @media only screen and (max-width: 520px) {
   body {
