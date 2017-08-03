@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/libs/bootstrap-v3.3.7/stylesheets/bootstrap.min.css';
+
+@import 'assets/scss/variables';
+
+body{
+  border-bottom: 1px solid $border-color;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  .container {
+    width: 80%;
+  }
+
+  @media #{$breakpoint-default} {
+    font-size: 16px;
+  }
+  @media #{$breakpoint-medium} {
+    font-size: 18px;
+  }
+}
+
+//imports
+@import 'assets/scss/post';
+@import 'assets/scss/menu';
+
+@import 'assets/scss/responsive';

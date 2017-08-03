@@ -1,0 +1,51 @@
+<div *ngIf="!ListaPosts; else ExibirPosts">
+  <h2>Nenhuma postagem realizada!</h2>
+</div>
+
+<ng-template #ExibirPosts>
+
+  <article class="posts media" *ngFor="let post of ListaPosts?.posts">
+
+    <div class="icon-user icon-user media-left">
+      <a href="#"><img class="media-object" src="{{ post?.user?.icon}}"  alt="{{ post?.user?.nome}}"/></a>
+    </div>
+    <div class="message media-body">
+      <div class="contents">
+        <header>
+          <h3 class="media-heading"><a href="#">{{ post?.user?.nome}}</a> disse:</h3>
+          <p>{{ post?.user?.title}}</p>
+        </header>
+
+        <aside class="media">
+          <div class="imagem media-left" *ngIf="post?.content?.banner">
+            <a href="{{ post?.content?.banner?.title }}">
+              <img src="{{ post?.content?.banner?.href }}" alt="{{ post?.content?.banner?.title }}">
+            </a>
+          </div>
+
+          <div class="media-body">
+            <p *ngFor="let item of post?.content?.itens;">
+             <a *ngIf="item.type; else texto" href="{{ item.href }}">{{ item.title }}</a>
+             <ng-template #texto>{{ item.href }}</ng-template>
+           </p>
+         </div>
+
+       </aside>
+     </div>
+
+     <!-- Comentários -->
+     <section class="coments">
+      <aside class="media"  *ngFor="let coment of post?.coments">
+        <div class="media-left">
+          <a href="#"><img class="media-object" src="{{ coment?.avatar }}" alt="{{ coment?.nome }}"></a>
+        </div>
+        <div class="media-body">
+          <p><a href="#">{{ coment?.nome }}</a> disse "{{ coment?.content }}"</p>
+        </div>
+      </aside>
+
+    </section>
+  </div>
+</article>
+
+</ng-template>

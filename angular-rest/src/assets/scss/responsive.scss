@@ -1,0 +1,60 @@
+body {
+  @media #{$breakpoint-default} {
+    // background: red;
+    .container {
+      width: 90%;
+
+      // post
+      main {
+       article.posts {
+        .message {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+@media #{$breakpoint-medium} {
+  // background: blue;
+  .container {
+    width: 100%;
+
+      // menu
+      nav.bar-side {
+        margin: 25px 0 0 0;
+        padding: 40px;
+      }
+
+    }
+  }
+
+  @media #{$breakpoint-small} {
+    // background: yellow;
+
+       // post
+       main {
+         article.posts {
+          .icon-user {
+            display: table;
+            margin: 0 auto 10px auto;
+          }
+
+          .message {
+            .contents{
+              .imagem {
+                display: inherit;
+                margin: 0 0 10px 0;
+              img {
+                width: 100%;
+                height: 200px;
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media #{$breakpoint-mobile} {
+      // background: orange;
+    }
+  }
